@@ -1,0 +1,14 @@
+1. Can we identify customer generating revenue, that is, "total_transactionRevenue (at least bigger than 0),
+    from the given dataset regarding the website behaviors?
+
+2. What are the critical factors in predicting "totals_transactionRevenue (at least bigger than 0)
+
+3. We assume the precisely targeted communication triggers the revenue. What will be critical insight to develop the
+    markting strategy in terms of customer segmentation and precision targeting in case we want to increase the number of
+    "totals_transactionRevenue (at least bigger than 0)
+    - Whom to communicate - customer demographics or device type, etc.
+    - When to communicate - does the time of visit matter?
+    - What to communicate - can we identify which type of contents influence?
+    - How to communicate - which communication channels?
+
+    
