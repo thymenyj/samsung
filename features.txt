@@ -1,0 +1,141 @@
+visitNumber: Session number
+totals_bounces: Total bounces, For a boundced session, the value is 1, otherwise 0 -> bounce when visitor leaves without new request
+totals_newVisits: Total number of new users in session. New session within time period (7 days example) -> 1 yes 0 no
+totals_hits: Number of hits in session -> hit is event
+totals_pageviews: total of page views -> page view is reload
+
+trafficSource_adwordsClickInfo.page: page number in search results where the ad was shown.
+trafficSource_isTrueDirect: True if the source of the session was Direct (meaning the users typed the name of the url)
+
+device_isMobile: if device is mobile
+
+channelGrouping: The Default Channel Group associated with an end user's session for this View
+- channelGrouping_Affiliates
+- channelGrouping_Direct
+- channelGrouping_Display
+- channelGrouping_Organic search
+- channelGrouping_Paid search
+- channelGrouping_Referral
+- channelGrouping_Social
+
+device_deviceCategory: device type
+- device_deviceCategory_desktop
+- device_deviceCategory_mobile
+- device_deviceCategory_tablet
+
+geoNetwork_continent_@:
+- geoNetwork_continent_Americas
+- geoNetwork_continent_Asia
+- geoNetwork_continent_Europe
+
+geoNetwork_subContinent_@:
+- geoNetwork_subContinent_Caribbean
+- geoNetwork_subContinent_Central America
+- geoNetwork_subContinent_Eastern Asia
+- geoNetwork_subContinent_Northern America
+- geoNetwork_subContinent_Northern Europe
+- geoNetwork_subContinent_South America
+- geoNetwork_subContinent_Western Asia
+
+trafficSource_medium_@:
+- trafficSource_medium_cpm
+- trafficSource_medium_organic
+- trafficSource_medium_referral
+- trafficSource_adwordsClickInfo.adNetworkType_@
+- trafficSource_adwordsClickInfo.slot_Top
+
+device_browser:
+- device_browser_Safari
+- device_browser_Firefox
+- device_browser_Internet Explorer
+- device_browser_Edge
+- device_browser_Chrome
+
+device_operatingSystem:
+- device_operatingSystem_Linux
+- device_operatingSystem_iOS
+- device_operatingSystem_Windows
+- device_operatingSystem_Android
+- device_operatingSystem_Macintosh
+- device_operatingSystem_Chrome OS
+
+geoNetwork_city:
+- geoNetwork_city_San Francisco
+- geoNetwork_city_Sunnyvale
+- geoNetwork_city_Houston
+- geoNetwork_city_San Bruno
+- geoNetwork_city_San Jose
+- geoNetwork_city_Washington
+- geoNetwork_city_New York
+- geoNetwork_city_Austin
+- geoNetwork_city_Atlanta
+- geoNetwork_city_Seattle
+- geoNetwork_city_Kirkland
+- geoNetwork_city_Chicago
+- geoNetwork_city_Toronto
+- geoNetwork_city_Ann Arbor
+- geoNetwork_city_Mountain View
+- geoNetwork_city_Los Angeles
+- geoNetwork_city_Salem
+- geoNetwork_city_Cambridge
+- geoNetwork_city_Santa Clara
+- geoNetwork_metro_Seattle-Tacoma WA
+- geoNetwork_metro_Los Angeles CA
+- geoNetwork_metro_Chicago IL
+- geoNetwork_metro_New York NY
+- geoNetwork_metro_San Francisco-Oakland-San Jose CA
+- geoNetwork_country_Canada
+- geoNetwork_country_Brazil
+- geoNetwork_country_United States
+- geoNetwork_country_Venezuela
+- geoNetwork_networkDomain_rr.com
+- geoNetwork_networkDomain_cox.net
+- geoNetwork_networkDomain_comcastbusiness.net
+- geoNetwork_networkDomain_comcast.net
+- geoNetwork_networkDomain_verizon.net
+- geoNetwork_networkDomain_sbcglobal.net
+- geoNetwork_region_Georgia
+- geoNetwork_region_Washington
+- geoNetwork_region_New York
+- geoNetwork_region_District of Columbia
+- geoNetwork_region_Texas
+- geoNetwork_region_California
+- geoNetwork_region_Massachusetts
+- geoNetwork_region_Illinois
+- geoNetwork_region_Michigan
+
+trafficSource:
+- trafficSource_adContent_Google Merchandise Collection
+- trafficSource_campaign_AW - Accessories
+- trafficSource_campaign_AW - Dynamic Search Ads Whole Site
+- trafficSource_keyword_1hZbAqLCbjwfgOH7
+- trafficSource_keyword_6qEhsCssdK0z36ri
+- trafficSource_keyword_(Remarketing/Content targeting)
+- trafficSource_keyword_Google Merchandise
+- trafficSource_keyword_google merchandise store
+- trafficSource_source_sites.google.com
+- trafficSource_source_mail.google.com
+- trafficSource_source_t.co
+- trafficSource_source_groups.google.com
+- trafficSource_source_bing
+- trafficSource_source_l.facebook.com
+- trafficSource_source_dealspotr.com
+- trafficSource_source_youtube.com
+- trafficSource_source_mall.googleplex.com
+- trafficSource_source_yahoo
+- trafficSource_source_dfa
+- trafficSource_source_analytics.google.com
+- trafficSource_source_(direct)
+- trafficSource_source_google
+- trafficSource_referralPath_/offer/2145
+- trafficSource_referralPath_/google-merchandise-store
+- trafficSource_referralPath_/mail/u/0/
+- trafficSource_referralPath_/yt/about/tr/
+- trafficSource_referralPath_/a/google.com/forum/
+- trafficSource_referralPath_/yt/about/pt-BR/
+- trafficSource_referralPath_/yt/about/es-419/
+- trafficSource_referralPath_/yt/about/
+- trafficSource_referralPath_/analytics/web/
+
+device_browser: browser used -> Chrome
+device_operatingSystem:
