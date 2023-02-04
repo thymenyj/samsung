@@ -81,3 +81,25 @@ NEED TO SPLIT 50/50 TRUE FALSE IN ORDER TO GET GOOD CLASSIFICATION
 
 STANDARDIZATION?
 
+Most important features from random forest
+ 1) totals_pageviews                            0.280534
+ 2) totals_hits                                 0.222943
+ 3) weekday                                     0.094611
+ 4) totals_bounces                              0.052951
+ 5) geoNetwork_country_United States            0.046278
+ 6) geoNetwork_subContinent_Northern America    0.027936
+ 7) geoNetwork_continent_Americas               0.022962
+ 8) geoNetwork_country                          0.022779
+ 9) visitNumber                                 0.022077
+10) trafficSource_source_mall.googleplex.com    0.018773
+11) geoNetwork_networkDomain                    0.015772
+12) geoNetwork_metro                            0.014548
+13) totals_newVisits                            0.013586
+14) geoNetwork_city                             0.009415
+15) geoNetwork_continent_Europe                 0.008829
+16) device_operatingSystem_Macintosh            0.008472
+17) trafficSource_source_youtube.com            0.007021
+18) trafficSource_isTrueDirect                  0.006920
+19) channelGrouping_Referral                    0.006348
+20) geoNetwork_continent_Asia                   0.005941
+
