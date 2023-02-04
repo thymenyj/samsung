@@ -59,6 +59,7 @@
         - What is different from the communication with america.  -> are the users different?
     - When to communicate - does the time of visit matter?
         - I did not see any timestamps in the dataset. Weekday is available but it has a very low feature importance in the regression.
+        - Weekday is an important feature. Should be changed to binary category columns. Weekday vs weekend can also be interesting or end/beginning of month vs middle of the month.
     - What to communicate - can we identify which type of contents influence?
         - Did not find any specified content in the dataset, only sources from the visits. In order to identify about the content I need more info about the revenue source.
         - What is possible is to determine whether the visitor is from social media or from a direct search for example.
