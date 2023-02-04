@@ -30,16 +30,50 @@
     -> California and New York have the most paying users. -> Mountain View -> San Francisco. More expensive areas.
     -> Traffic Source mostly youtube, googleplex.com, direct and google.
         googleplex, direct search have higher chance on visitor paying. Youtube chance on paying visitor is almost 0.
-        
 
+    regression for feature importance all
+    -> geo city Salem -> negative
+    -> traffic source referral path mail/u/0 -> positive
+    -> traffic source referral path google-merchandise-store -> positive
+    -> traffic source dealspotr.com -> negative
+    -> geo city Atlanta -> positive
+    -> geo region Georiga -> negative
+    -> geo network domain -> comcastbusiness.net -> negative
 
+    regression for feature importance only paying
+    -> geo city Salem -> negative
+    -> geo continent Asia -> negative
+    -> geo continent Europe -> negative
+    -> traffic source referral path mail/u/0 -> positive
+    -> geo continent America -> negative
+    -> device browser Firefox -> positive
+    -> geo city Atlanta -> positive
+
+    Hoe kan het dat America negatief bij feature importance geeft. -> influence south and central america?
 
 3. We assume the precisely targeted communication triggers the revenue. What will be critical insight to develop the
     markting strategy in terms of customer segmentation and precision targeting in case we want to increase the number of
     "totals_transactionRevenue (at least bigger than 0)
     - Whom to communicate - customer demographics or device type, etc.
+        - Geo location -> current state vs future state. -> two segments north america vs rest -> communication not effetive in asia and european
+        - What is different from the communication with america.  -> are the users different?
     - When to communicate - does the time of visit matter?
+        - I did not see any timestamps in the dataset. Weekday is available but it has a very low feature importance in the regression.
     - What to communicate - can we identify which type of contents influence?
+        - Did not find any specified content in the dataset, only sources from the visits. In order to identify about the content I need more info about the revenue source.
+        - What is possible is to determine whether the visitor is from social media or from a direct search for example.
+        - From the geo locations and pay vs non pay you can see that it is very difficult for non north americans to buy.
+            maybe the content is only targeted to US people and products cannot easily be bought from europeans and asians.
     - How to communicate - which communication channels?
+        - What communication channels are more effective at the moment. We seperate paying customers with non paying customers.
 
-    
+
+    make different data sets based on:
+    - demographics WHOM.
+    - time WHEN.
+    - type of content WHAT.
+    - channels HOW.
+
+
+NOT REGRESSION BUT CLASSIFICATION -> Y = Paying or Not paying
+
