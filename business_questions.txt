@@ -1,7 +1,38 @@
 1. Can we identify customer generating revenue, that is, "total_transactionRevenue (at least bigger than 0),
     from the given dataset regarding the website behaviors?
 
+    Yes we can identify customer generating revenue from the dataset. Every row is linked to a total transaction value, so all the visting data is linked to a customer revenue.
+    We can also see that there is a large variety when it comes to total transaction value per visitor.
+    
+    There are no visitors below the $10.000
+    2 visitors between 10.000 - 100.000 -> total 0.13M
+    6 visitors between 100.000 - 1M -> 3.4M
+    524 visitors between 1M - 10M -> 3.2B
+    7878 visitors between 10M - 100M -> 331B
+    2891 visitors between 100M - 1B -> 785B
+    191 visitors between 1B - 10B -> 350B
+    4 visitors between 10B - 100B -> 67.5B
+
+    Company has a lot a high paying visitors. Small part of visitors generate large part of the revenue.
+
 2. What are the critical factors in predicting "totals_transactionRevenue (at least bigger than 0)
+    Plotted the features with non_paying vs paying customers
+    -> total_hits seem important and total pageviews as expected
+    -> paying vistors come mostly from referral, organic and direct
+    -> large difference in social and affiliates -> maybe possibility to transfer large customer base from social media.
+    -> people buy mostly from desktop -> can be because of high revenue per visitor
+    -> 98 paying customers are from US but only half of the visitors. Why do asian and european customers not buy?
+    -> northen America same
+    -> large part is referral and organic not
+    -> all visitors are from adNetworkType @ only small part from Slot Top -> Slot Top visitors are paying more often
+    -> Most users are chrome. Chrome has also higher chance for paying customers compared to other. 
+    -> Most paying customers come from Macintosh, then Windows. Much higher rate for mac users. Mac users use most of the time chrome then.
+    -> California and New York have the most paying users. -> Mountain View -> San Francisco. More expensive areas.
+    -> Traffic Source mostly youtube, googleplex.com, direct and google.
+        googleplex, direct search have higher chance on visitor paying. Youtube chance on paying visitor is almost 0.
+        
+
+
 
 3. We assume the precisely targeted communication triggers the revenue. What will be critical insight to develop the
     markting strategy in terms of customer segmentation and precision targeting in case we want to increase the number of
