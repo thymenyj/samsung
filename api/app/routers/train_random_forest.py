@@ -8,7 +8,7 @@ from app.src.databases.AnalyticsDatabase import AnalyticsDatabase
 router = APIRouter()
 
 
-@router.get("/train_random_forest")
+@router.post("/train_random_forest")
 async def train_random_forest():
     try:
         connection_string = os.getenv("ANALYTICS_DATABASE_CONNECTION_STRING")

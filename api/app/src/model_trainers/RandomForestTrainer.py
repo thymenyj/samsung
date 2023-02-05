@@ -44,8 +44,8 @@ class RandomForestTrainer:
             print("%2d) %-*s %f" % (f + 1, 30,
                                     feat_labels[sorted_indices[f]],
                                     importances[sorted_indices[f]]))
-            
-        dump(random_forest, open("/app/models/random_forest.pkl", 'wb'))
+
+        dump(random_forest, open("/app/ml_models/random_forest.pkl", 'wb'))
         print("Saved Random Forest")
 
     def _get_visitors_dataframe(self):

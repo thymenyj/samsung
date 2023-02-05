@@ -8,7 +8,7 @@ from app.src.databases.AnalyticsDatabase import AnalyticsDatabase
 router = APIRouter()
 
 
-@router.get("/load_kaggle_data_to_database")
+@router.post("/load_kaggle_data_to_database")
 async def load_kaggle_data_to_database():
     try:
         connection_string = os.getenv("ANALYTICS_DATABASE_CONNECTION_STRING")
