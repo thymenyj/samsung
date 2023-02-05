@@ -40,7 +40,7 @@ class DataProcessor:
     def _save_to_database(self, visitor_dataframe) -> None:
         print("Save to database")
         with self._analytics_database.engine.begin() as connection:
-            visitor_dataframe.to_sql("visitors", con=connection, if_exists="replace")
+            visitor_dataframe.to_sql("visitors", con=connection, if_exists="replace", index=False)
 
     def _get_visitor_dataframe(self, X_train, y_train, feature_names):
         visitor_dataframe = DataFrame(columns=feature_names, data=X_train)
