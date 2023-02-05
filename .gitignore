@@ -1,4 +1,4 @@
 jupyter/app/data
 api/app/data
 
-**__pycache__/
+**/__pycache__
