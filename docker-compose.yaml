@@ -8,3 +8,12 @@ services:
     volumes:
       - ./jupyter/app:/home/jovyan/app
     env_file: ./jupyter/.env
+  api:
+    build:
+      context: ./api
+      dockerfile: docker/Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - ./api/app:/app
+    env_file: ./api/.env
