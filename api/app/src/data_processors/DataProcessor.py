@@ -1,4 +1,4 @@
-from pandas import DataFrame, read_pickle
+from pandas import DataFrame, read_pickle, concat
 from kaggle.api.kaggle_api_extended import KaggleApi
 from zipfile import ZipFile
 
@@ -29,12 +29,17 @@ class DataProcessor:
         feature_names = data.get("feature_names")
 
         visitor_dataframe = self._get_visitor_dataframe(X_train, y_train, feature_names)
+        paying_visitor_dataframe = visitor_dataframe[visitor_dataframe["positive_revenue"] == 1]
+        number_of_rows = len(paying_visitor_dataframe)
+        non_paying_visitor_dataframe = visitor_dataframe[visitor_dataframe["positive_revenue"] == 0][:number_of_rows]
 
-        self._save_to_database(visitor_dataframe)
+        balanced_dataframe = concat([paying_visitor_dataframe, non_paying_visitor_dataframe])
+        
+        self._save_to_database(balanced_dataframe)
 
     def _save_to_database(self, visitor_dataframe) -> None:
         print("Save to database")
-        with self._analytics_database.engine.connect() as connection:
+        with self._analytics_database.engine.begin() as connection:
             visitor_dataframe.to_sql("visitors", con=connection, if_exists="replace")
 
     def _get_visitor_dataframe(self, X_train, y_train, feature_names):
