@@ -17,3 +17,11 @@ services:
     volumes:
       - ./api/app:/app
     env_file: ./api/.env
+    depends_on: 
+      - postgres
+  postgres:
+    image: postgres
+    ports:
+      - 5432:5432
+    restart: always
+    env_file: ./postgres/.env

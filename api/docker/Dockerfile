@@ -6,4 +6,6 @@ RUN pip install -r /app/requirements.txt
 
 COPY ./app /app
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+COPY kaggle.json /root/.kaggle/kaggle.json
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]
