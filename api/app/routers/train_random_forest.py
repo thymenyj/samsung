@@ -1,4 +1,5 @@
 import os
+from logging import error
 from starlette.status import HTTP_500_INTERNAL_SERVER_ERROR
 from fastapi import APIRouter, HTTPException
 
@@ -18,7 +19,5 @@ async def train_random_forest():
         data_processor.train()
 
     except Exception as exc:
-        print(exc)
+        error(f"Failed to train random forest. --> {exc}")
         raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR) from exc
-
-    return

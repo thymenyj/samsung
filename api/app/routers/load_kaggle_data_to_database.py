@@ -1,4 +1,5 @@
 import os
+from logging import error, info
 from starlette.status import HTTP_500_INTERNAL_SERVER_ERROR
 from fastapi import APIRouter, HTTPException
 
@@ -13,13 +14,12 @@ async def load_kaggle_data_to_database():
     try:
         connection_string = os.getenv("ANALYTICS_DATABASE_CONNECTION_STRING")
         analytics_database = AnalyticsDatabase(connection_string)
-        
+
         data_processor = DataProcessor(analytics_database)
         data_processor.process()
 
-        
-    except Exception as exc:
-        print(exc)
-        raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR) from exc
+        info("Loaded kaggle data to database successfully!")
 
-    return 
+    except Exception as exc:
+        error("Failed to load kaggle data to database. -> {exc}")
+        raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR) from exc
